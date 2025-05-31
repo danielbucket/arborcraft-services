@@ -1,9 +1,9 @@
-export default function Main() {
+export default function Home() {
   return (
     <main>
       <div>
         <nav>
-          <p>ArborCraft Services Main</p>
+          <p>ArborCraft Services Home</p>
         </nav>
       </div>
     </main>

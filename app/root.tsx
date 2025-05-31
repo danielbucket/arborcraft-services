@@ -8,6 +8,7 @@ import {
 } from "react-router";
 
 import type { Route } from "./+types/root";
+// import "./styles.global.css";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -41,6 +42,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 };
 
 export default function App() {
+  // App-wide context or state can be initialized here, as a prop to the <Outlet /> component, if needed
   return <Outlet />;
 };
 
