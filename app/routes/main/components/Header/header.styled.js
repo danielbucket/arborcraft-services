@@ -1,58 +1,50 @@
 import { styled } from 'styled-components';
 
 export const StyledHeader = styled.div`
-  width: 100vw;
-  height: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #4CAF50;
-  color: white;
+  background-color: var(--earth-moss);
+  height: 14rem;
 
   div {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 2rem;
 
-    h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    p {
-      margin: 0.5rem 0;
-      font-size: 1.2rem;
+    img {
+      width: 100%;
     }
   }
 
   nav {
-    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+    height: 5rem;
+    margin: 1rem auto 0 auto;
+    border: 0.15rem solid var(--earth-forest);
+    border-radius: 0.5rem;
 
     ul {
-      list-style: none;
-      padding: 0;
       display: flex;
       gap: 1.5rem;
+      list-style: none;
+      padding: 0;
 
       li {
         a {
-          color: white;
+          color: var(--earth-forest);
           text-decoration: none;
-          font-size: 1.2rem;
+          font-size: 1.75rem;
 
           &:hover {
             text-decoration: underline;
           }
         }
       }
-    }
-  }
-    
-  @media (max-width: 600px) {
-    flex-direction: column;
-    align-items: center;
-    nav ul {
-      flex-direction: column;
-      align-items: center;
-      gap: 0.5rem;
     }
   }
 `;

@@ -1,11 +1,9 @@
+import { StyledHome } from './home.styled.js';
+
 export default function Home() {
   return (
-    <main>
-      <div>
-        <nav>
-          <p>ArborCraft Services Home</p>
-        </nav>
-      </div>
-    </main>
+    <StyledHome>
+      <p>Welcome to ArborCraft Services!</p>
+    </StyledHome>
   );
 };
