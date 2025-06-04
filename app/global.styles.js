@@ -34,6 +34,7 @@ const GlobalStyles = createGlobalStyle`
 		--earth-clay: #b66a50;
 		--earth-sand: #e2c290;
 		--earth-stone: #a9a9a9;
+		--earth-stone-opaque: #a9a9a96e; /* Adjusted for opacity */
 		--earth-sky: #7ec850;
 		--earth-forest: #355e3b;
 		--earth-moss: #8a9a5b;
