@@ -3,7 +3,7 @@ import { Outlet } from 'react-router';
 import Header from "./components/Header/header";
 import { StyledMain } from "./main.styled.js";
 
-// the meta functidon is used to set the page title and description
+// the meta function is used to set the page title and description
 // it is called by the framework when the page is rendered
 // it returns an array of objects with the title and description
 export function meta({}: Route.MetaArgs) {

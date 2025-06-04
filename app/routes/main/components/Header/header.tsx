@@ -5,9 +5,7 @@ import Logo from './arborcraft.png';
 export default function Header() {
   return (
     <StyledHeader>
-      <div>
-        <img src={Logo} alt="ArborCraft Logo" />
-      </div>
+      <img src={Logo} alt="ArborCraft Logo" />
       <nav>
         <ul>
           <li><Link to="/">Home</Link></li>
