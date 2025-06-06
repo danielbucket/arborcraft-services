@@ -1,6 +1,8 @@
+import { StyledRoute } from '../styles/route.styles.js';
+
 export default function About() {
   return (
-    <main>
+    <StyledRoute>
       <h1>About ArborCraft Services</h1>
       <p>
         ArborCraft Services is dedicated to providing top-notch tree care and
@@ -34,7 +36,7 @@ export default function About() {
         can enjoy for years to come. Contact ArborCraft Services today to
         schedule a consultation and discover how we can transform your property.
       </p>
-    </main>
+    </StyledRoute>
   );
 };
 
