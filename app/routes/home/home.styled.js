@@ -8,68 +8,76 @@ export const StyledHome = styled.div`
 `;
 
 export const SectionContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
   height: 100%;
   width: 100%;
-  padding-top: 2rem;
   letter-spacing: 0.25rem;
-
+  
   background-image: url(${({ src }) => src});
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 
   scroll-snap-align: start;
 	scroll-snap-stop: always;
+
+  .opacity-layer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.25);
+
+    .content-body {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      color: var(--earth-sand);
+      font-family: 'Roboto', sans-serif;
   
-  .text-content {
-    flex-grow: 1;
-    background-color: rgba(0, 0, 0, 0.5);
-
-    p:first-child {
-      color: var(--earth-forest);
-      font-size: 4rem;
-      font-weight: 700;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      line-height: 1.2;
-      text-align: center;
-      padding: 1rem;
-      // height: 6rem;
+      p:first-child {
+        font-size: 3.25rem;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        line-height: 1.2;
+        text-align: center;
+        padding: 1rem;
+      }
+  
+      p:last-child {
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        font-size: 2.75rem;
+        text-align: center;
+        padding: 0 1rem;
+      }
     }
 
-    p:nth-child(2) {
-      color: white;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-      font-size: 2.75rem;
-      text-align: center;
-      padding: 0 1rem;
-    }
-
-    p:last-child {
-      color: white;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-      font-size: 2.25rem;
-      text-align: center;
-      padding: 0 1rem;
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 15rem;
+      width: 100%;
     }
   }
 `;
 
 export const StyledLink = styled(Link)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 65%;
   background-color: var(--earth-forest);
   color: var(--earth-sand);
   font-size: 2.25rem;
   letter-spacing: 0.25rem;
-
   border-radius: 0.5rem;
   cursor: pointer;
-
-  height: 4rem;
-  width: 85%;
-  align-self: center;
-  margin-bottom: 4rem;
 
   &:hover {
     background-color: var(--earth-moss);

@@ -5,10 +5,10 @@ import aboutImage from './images/techdocs01.jpeg';
 
 export const homeDataStub = [
   {
-    title: null,
+    title: "Home",
     // No buttonText for the landing page
     buttonText: null,
-    description: "Welcome to ArborCraft, your go-to destination for all things.",
+    description: "ArborCraft Services, your go-to destination for all things.",
     additionalInfo: "Discover our services, explore our projects, and get in touch with us.",
     image: landingPageImage,
     alt: "ArborCraft Services Landing Page",
