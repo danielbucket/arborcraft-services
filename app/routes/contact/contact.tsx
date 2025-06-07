@@ -1,8 +1,8 @@
-import { StyledRoute } from '../styles/route.styles.js';
+import { StyledContact } from './contact.styled.js';
 
 export default function Contact() {
   return (
-    <StyledRoute>
+    <StyledContact>
       <h1>Contact Us</h1>
       <p>Welcome to the ArborCraft Contact page!</p>
       <p>If you have any questions or need assistance, please reach out to us.</p>
@@ -24,6 +24,6 @@ export default function Contact() {
         <button type="submit">Send Message</button>
       </form>
       <p>Thank you for reaching out to us!</p>
-    </StyledRoute>
+    </StyledContact>
   );
 };

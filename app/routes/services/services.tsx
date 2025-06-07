@@ -1,8 +1,8 @@
-import { StyledRoute } from '../styles/route.styles.js';
+import { StyledServices } from './services.styled.js';
 
 export default function Services() {
   return (
-    <StyledRoute>
+    <StyledServices>
       <h1>Services</h1>
       <p>Welcome to the ArborCraft Services page!</p>
       <p>Here you can find a list of services we offer.</p>
@@ -12,6 +12,6 @@ export default function Services() {
         <li>Stump Grinding</li>
         <li>Emergency Tree Services</li>
       </ul>
-    </StyledRoute>
+    </StyledServices>
   );
 };

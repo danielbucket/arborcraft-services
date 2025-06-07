@@ -16,8 +16,12 @@ export function meta({}: Route.MetaArgs) {
 export default function Main() {
   return (
     <StyledMain>
-      <Header />
-      <Outlet />
+      <div className="header-container">
+        <Header />
+      </div>
+      <div className="routes-container">
+        <Outlet />
+      </div>
     </StyledMain>
   );
 };

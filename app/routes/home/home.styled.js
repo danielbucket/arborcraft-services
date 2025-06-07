@@ -2,7 +2,7 @@ import { styled } from 'styled-components';
 import { Link } from 'react-router';
 
 export const StyledHome = styled.div`
-  flex-grow: 1;
+  height: 100%;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 `;

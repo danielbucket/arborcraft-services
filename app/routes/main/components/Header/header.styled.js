@@ -1,10 +1,6 @@
 import { styled } from 'styled-components';
 
 export const StyledHeader = styled.div`
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  height: 14rem;
   display: flex;
   flex-direction: column;
   align-items: center;
