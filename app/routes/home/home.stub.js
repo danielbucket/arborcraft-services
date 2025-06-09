@@ -1,12 +1,12 @@
 import landingPageImage from './images/designer02.jpeg';
 import servicesImage from './images/techdocs02.jpeg';
 import contactImage from './images/designer03.jpeg';
-import aboutImage from './images/techdocs01.jpeg';
+import reviewsImage from './images/techdocs01.jpeg';
+import pricesImage from './images/designer01.jpeg';
 
 export const homeDataStub = [
   {
     title: "Home",
-    // No buttonText for the landing page
     buttonText: null,
     description: "ArborCraft Services, your go-to destination for all things.",
     additionalInfo: "Discover our services, explore our projects, and get in touch with us.",
@@ -33,12 +33,21 @@ export const homeDataStub = [
     link: "/contact"
   },
   {
-    title: "About",
-    buttonText: "Discover More",
-    description: "Learn more about ArborCraft and our commitment to quality and service for all your needs.",
-    additionalInfo: "We are dedicated to providing the best solutions for your needs.",
-    image: aboutImage,
-    alt: "ArborCraft About",
-    link: "/about"
+    title: "Prices",
+    buttonText: "View Prices",
+    description: "Check out our competitive pricing plans tailored to suit all your needs.",
+    additionalInfo: "Affordable solutions without compromising on quality.",
+    image: pricesImage,
+    alt: "ArborCraft Prices",
+    link: "/prices"
+  },
+  {
+    title: "Reviews",
+    buttonText: "Read Reviews",
+    description: "See what our satisfied customers have to say about our services.",
+    additionalInfo: "Real feedback from real clients.",
+    image: reviewsImage,
+    alt: "ArborCraft Reviews",
+    link: "/reviews"
   }
 ];

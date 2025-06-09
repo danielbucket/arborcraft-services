@@ -31,7 +31,7 @@ export const StyledHeader = styled.div`
         a {
           color: var(--earth-forest);
           text-decoration: none;
-          font-size: 2.2rem;
+          font-size: 1.75rem;
 
           &:hover {
             text-decoration: underline;
